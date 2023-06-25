@@ -50,7 +50,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowLocalhost", builder =>
     {
-        builder.WithOrigins("http://localhost:3000", "https://localhost:3000")
+        builder.WithOrigins("http://localhost:3001", "http://localhost:3000", "https://localhost:3000")
             .AllowAnyMethod()
             .AllowAnyHeader();
     });
